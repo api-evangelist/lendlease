@@ -1,0 +1,21 @@
+name: Lendlease MCP Server
+description: No official Lendlease MCP server (hosted or local) was found, and Lendlease publishes no OpenAPI contract from which a candidate tool list could be derived. This file records that honest negative.
+type: MCPServer
+generated: '2026-10-21'
+method: none
+status: none
+source: https://www.lendlease.com/
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://www.lendlease.com/mcp
+  status: 403
+  note: Pre-flight probe; control path also returned 403, so the edge rejects before routing (opaque) — proves nothing about an MCP server.
+- url: https://lendlease.com/mcp
+  status: 403
+  note: Same opaque 403 as control.
+- search: Lendlease MCP server OR API developer
+  result: No Lendlease MCP server or developer API surfaced (2026-10-21).

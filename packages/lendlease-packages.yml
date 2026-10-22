@@ -1,0 +1,14 @@
+name: Lendlease packages
+generated: '2026-10-21'
+method: none
+note: Checked, nothing found. No first-party SDK, CLI or client library is published. registry.npmjs.org/lendlease returned 404, pypi.org/pypi/lendlease/json returned 404, api.github.com/orgs/lendlease returned 404 (GitHub repo search org:lendlease returned 0), and www.lendlease.com/developers/ returned 404. A web search for Lendlease API/SDK documentation found no Lendlease developer material.
+checked:
+- url: https://registry.npmjs.org/lendlease
+  status: 404
+- url: https://pypi.org/pypi/lendlease/json
+  status: 404
+- url: https://api.github.com/orgs/lendlease
+  status: 404
+- url: https://www.lendlease.com/developers/
+  status: 404
+packages: []

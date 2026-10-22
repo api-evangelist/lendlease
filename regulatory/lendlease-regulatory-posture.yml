@@ -1,0 +1,89 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://www.lendlease.com/privacy/
+notes: >-
+  The pre-flight script got a 403 from www.lendlease.com/privacy/ and /terms-of-use/. A browser-UA GET on
+  2026-10-21 returned 200 for both. The privacy policy (page title "Privacy Policy | Australia | Lendlease",
+  "Last updated 25 May 2018") is written under UK data protection rules and names the ICO as lead
+  supervisory authority. The Terms of Use (last updated 12 May 2016) say nothing about any catalogued
+  regulatory signal.
+signals:
+  data_subject_request:
+    url: https://www.lendlease.com/privacy/
+    section: 'WHAT RIGHTS DO YOU HAVE?'
+    channel: 'ATTN: Data Protection Manager, Lendlease, Level 9, 5 Merchant Square, London W2 1BQ, United Kingdom (postal)'
+    stated_sla: 'We will respond to your request within one month.'
+    rights_named: [access, rectification, erasure, restriction, portability, objection, not to be subject to automated decisions, withdrawal of consent]
+    escalation: Information Commissioner's Office (www.ico.org.uk), named as lead supervisory authority
+    evidence:
+    - source: https://www.lendlease.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You have a number of rights under the Data Protection Laws in relation to the way we process your
+        personal data, which are set out below. You may contact us using the details set out below to exercise
+        any of these rights. We will respond to your request within one month.
+    - source: https://www.lendlease.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: '5. You have the right to port your personal data'
+    note: >-
+      A UK GDPR-style list of eight data subject rights with a one-month response commitment. The only
+      channel given is a postal address for the Data Protection Manager in London.
+  data_retention:
+    url: https://www.lendlease.com/privacy/
+    evidence:
+    - source: https://www.lendlease.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        At the end of that retention period, your data will either be deleted completely or anonymised, for
+        example by aggregation with other data so that it can be used in a non-identifiable way for statistical
+        analysis and business planning.
+    - source: https://www.lendlease.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        When you purchase a home from us, we’ll keep the personal data you give us for twelve years, so we can
+        comply with our legal and contractual obligations.
+    note: >-
+      Gives example retention periods: 12 years for home owners, and accounts inactive for more than five
+      years are flagged and then closed. At the end of a retention period data is deleted or anonymised.
+  data_residency:
+    url: https://www.lendlease.com/privacy/
+    evidence:
+    - source: https://www.lendlease.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Where your information is transferred to a third party (for example our Customer Relationship
+        Management system provider) this is also likely to be transferred to a third country, namely the
+        United States.
+    - source: https://www.lendlease.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Where your personal data is collected within the European Economic Area ("EEA"), it will only be
+        transferred outside of the EEA where an adequate level of protection for your rights as a data subject
+        can be ensured, and where the transfer is otherwise in accordance with relevant data protection laws,
+        including by incorporating standard clauses approved by the European Commission in our agreements.
+    note: >-
+      This is a cross-border transfer disclosure, not a residency guarantee. Data moves between group
+      companies in Australia, the UK, Greater China, Japan, Malaysia, Singapore, Hong Kong, the US and Italy.
+      EEA transfers rely on adequacy or standard contractual clauses.
+  subprocessors:
+    url: https://www.lendlease.com/privacy/
+    section: 'OTHER DISCLOSURES OF YOUR PERSONAL DATA?'
+    evidence:
+    - source: https://www.lendlease.com/privacy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We will disclose your personal information to third parties, as set out above and: to our professional
+        advisors (including without limitation tax, legal or other corporate advisors who provide professional
+        services to the Lendlease Group); to other third-party suppliers for business administration or IT
+        purposes;
+    note: >-
+      Third-party recipients are named only by category. A processing table names one external service,
+      Workday, for recruitment. There is no published subprocessor list.

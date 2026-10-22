@@ -1,0 +1,20 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/lendlease/integrations
+- https://n8n.io/integrations/lendlease/
+- https://composio.dev/toolkits/lendlease
+- https://monid.ai/tools/lendlease
+checked:
+- https://zapier.com/apps/lendlease/integrations
+- https://www.lendlease.com/developers/
+- https://www.lendlease.com/
+- https://composio.dev/toolkits/lendlease
+- https://monid.ai/tools/lendlease
+- https://n8n.io/integrations/lendlease/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Checked, nothing found. Lendlease publishes no API, developer portal, marketplace app or integrations page;
+  no zapier listing exists.

@@ -1,23 +1,93 @@
 aid: lendlease
+
 name: Lendlease
-description: 'Lendlease is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Lendlease is a global real estate group headquartered in Sydney, Australia, founded in 1958 and listed on the ASX. It operates across Australia, Asia, Europe and the Americas through three capabilities: Investment Management, Development and Construction. Surfaced via the australia-apidays-2026 harvest; its website (www.lendlease.com) publishes no public developer portal, API documentation or API reference.'
+
 url: https://raw.githubusercontent.com/api-evangelist/lendlease/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Real Estate
+- Construction
+- Property Development
+- Investment Management
+- Australia
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.lendlease.com/static/assets/images/favicon.ico
+
 common:
+- type: Hosts
+  url: hosts/lendlease-hosts.yml
+- type: Vendors
+  url: vendors/lendlease-vendors.yml
+- type: Pricing
+  url: https://www.lendlease.com/media-centre/media-releases/2026/08/plans-submitted-final-phase-Stratford-Cross/
+- type: DomainSecurity
+  url: security/lendlease-domain-security.yml
 - type: Website
-  url: https://lendlease.com/
+  url: https://www.lendlease.com/
+- type: About
+  url: https://www.lendlease.com/about-us/
+- type: Leadership
+  url: https://www.lendlease.com/about-us/leadership/
+- type: Support
+  url: https://www.lendlease.com/contact-us/
+- type: Blog
+  url: https://www.lendlease.com/insights/
+- type: Newsroom
+  url: https://www.lendlease.com/media-centre/
+- type: InvestorRelations
+  url: https://www.lendlease.com/investor-centre/
+- type: Careers
+  url: https://www.lendlease.com/careers/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/lendlease
+- type: TermsOfService
+  url: https://www.lendlease.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.lendlease.com/privacy/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified 200 with title/meta naming Lendlease; no developer portal, API docs or API pointers found on the site.
+  evidence:
+  - url: https://www.lendlease.com/
+    status: 200
+  - url: https://www.lendlease.com/privacy/
+    status: 200
+  - url: https://www.lendlease.com/terms-of-use/
+    status: 200
+  - url: https://www.lendlease.com/contact-us/
+    status: 200
+  - url: https://www.lendlease.com/insights/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
